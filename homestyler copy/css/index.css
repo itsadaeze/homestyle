@@ -1,0 +1,522 @@
+/** HERO SECTION **/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px; 
+    margin-top: 5rem;
+    background-color: #ffffff;
+}
+
+.text-content {
+    max-width: 700px;
+    padding: 3rem;
+}
+
+.hero-title {
+    font-size: 4.5em;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-title span {
+    color: #d370f1;
+}
+
+.hero-description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    background-color: #b70eeb;
+    border: 2px solid #c214e9;
+    color: #FFF;
+    padding: 0.5rem 1.5rem;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    background-color: #0056b3;
+}
+
+.image-content {
+    flex: 0.8;
+
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/** BRIEF ABOUT SECTION **/
+.abouthome-container {
+  
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 2rem;
+    background-color: white;
+    margin-bottom: 2em;
+}
+
+.abouthome-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 40px;
+    
+    margin-top: 2.5em;
+    color: BLACK;
+}
+
+.abouthome-title span{
+    color:#d370f1;
+}
+
+
+
+.abouthome-description {
+    font-size: 15px;
+    margin-top: 1rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+
+.explore-more{
+    display: block;
+    align-items: center;
+    margin-top: 3em;
+}
+.explore-button{
+    background-color: rgb(250, 206, 206);
+    border: 2px solid rgb(250, 206, 206);
+    color: blue;
+    padding: 0.7rem 1.9rem;
+    border-radius:15px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/**SCROLL EFFECT**/
+
+
+.scroll-container {
+    margin-top: 2.5rem; /* 10 units */
+    padding: 0;
+    background-color: white;
+    gap: 6;
+}
+
+.scroll-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2.5rem; 
+
+}
+.scroll-header p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.scrollbutton-group {
+    display: flex;
+    gap: 0.5rem; /* Space between buttons */
+}
+
+.scrollarrow-button {
+    padding: 0.5rem;
+    background-color: #333333;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+
+.scrollcard-container {
+    display: flex;
+    overflow-x: hidden;
+    gap: 4;
+    padding: 0 1.5rem; 
+}
+
+.scrollcard {
+    display: flex;
+    flex-direction: row;
+    width: 30%; 
+    padding: 0.25rem; 
+    margin-top: 0.75rem;
+    margin-right: 1rem; 
+}
+
+.scrollcard:last-child {
+    margin-right: 0; 
+}
+
+.scrollcard img {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) { 
+    .scrollcard {
+        width: calc(50% - 0.5rem); 
+    }
+}
+
+@media (max-width: 768px) {
+    .scrollcard {
+        width: 100%; 
+    }
+
+    .scroll-header p {
+        font-size: 15px;
+    }
+
+    .scroll-header {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .scrollcard-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin-bottom: 2em;
+    }
+
+    .scrollbutton-group {
+        margin-top: 1rem; 
+    }
+}
+
+
+/**PRODUCT SECTION**/
+
+.productmain-container{
+    margin-top: 5rem;
+}
+.producthome-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productcard {
+    margin: 40px 20px;
+    width: calc(33.33% - 40px);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.productcard img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.productcard h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.productcard p {
+    font-size: 16px;
+    color: #666;
+    text-align: left;
+}
+
+/* Mobile view */
+@media only screen and (max-width: 768px) {
+
+    .productcard {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+/**FAQ**/
+
+
+.faq-container {
+    max-width: 100%;
+    margin: 80px auto;
+    padding: 20px 40px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-accordion {
+    margin-top: 20px;
+    
+}
+
+
+.faq-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+    font-weight:600;
+    cursor: pointer;
+    display: flex;
+    padding: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+    justify-content: space-between;
+}
+
+.faq-answer {
+    display: none;
+    padding: 5px 10px 15px;
+    
+    text-align: left;
+    color: #00000b;
+}
+
+.faq-answer.show {
+    display: block;
+}
+
+.plus-minus {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+    .faq-container {
+        max-width: 70%;
+    }
+}
+
+/**TESTIMONY**/
+
+.testimonial-container {
+    background-color: rgb(250, 206, 206);
+    padding: 5rem 0;
+    text-align: center;
+    
+}
+
+.testimonial-container h1 {
+    color: black;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonial-slider {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.arrow-left, .arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.arrow-left {
+    left: 20px;
+}
+
+.arrow-right {
+    right: 20px;
+}
+
+.testimonial-items {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.testimonial-item {
+    scroll-snap-align: center;
+    margin: 10px;
+    width: calc(100% / 1);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 1rem;
+}
+
+.testimonial-item p {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info p {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0;
+}
+
+/* Responsive Styles */
+
+/* HERO SECTION */
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .text-content {
+        padding: 2rem; 
+        text-align: center; 
+    }
+
+    .hero-title {
+        font-size: 3em; 
+        line-height: 1.2;
+    }
+
+    .hero-description {
+        font-size: 1em; 
+    }
+
+    .hero-button {
+        font-size: 14px; 
+    }
+
+    .image-content {
+        flex: none; 
+        margin-top: 20px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 4em; 
+        line-height: 1.2;
+    }
+
+    .hero-description {
+        font-size: 1em; 
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        margin-top: -1em;
+        font-size: 2.5em; 
+        line-height: 1.2;
+    }
+
+    .hero-description {
+        font-size: 0.9em; 
+    }
+}
+
+
+/**  ABOUT RESPONSIVENESS**/
+@media (min-width: 768px) {
+    .abouthome-title {
+        font-size: 40px;
+        line-height: 32px;
+        letter-spacing: 0.1em; 
+        padding: 0 4rem;
+        margin-top: 1em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .abouthome-title {
+        font-size: 60px;
+        margin-top: 8rem;
+        line-height: 46.5px;
+        letter-spacing: 3.7px; 
+        padding: 0 8rem;
+    }
+    .abouthome-description {
+        font-size: 23px;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .abouthome-title {
+        line-height: 54px;
+    }
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    .description {
+        font-size: 18px;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .description {
+        font-size: 20px;
+        max-width: 85%;
+    }
+}

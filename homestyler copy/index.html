@@ -1,0 +1,200 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar and Footer</title>
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+    <!-- Navbar  -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <!-- <img src="images/logo.png" alt="logo" class="logo-img"> -->
+                HomeStyler
+            </a>
+            <div class="nav-links">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/about" class="nav-link">About Us</a>
+                <a href="/course" class="nav-link">Gallery</a>
+                <div class="drop">
+                    <a href="#" class="nav-link" onclick="closeMenu()">Product</a>
+                    <ul class="dropdown">
+                        <li><a href="/product/funiture.html">Funiture</a></li>
+                        <li><a href="/product/kitchen.html">Kitchen</a></li>
+                        <li><a href="/product/lighting.html">Lighting</a></li>
+                        <li><a href="/product/decor.html">Decor</a></li>
+                        <li><a href="/product/bath.html">Bathroom</a></li>
+                    </ul>
+                </div>
+                <a href="/watchlist" class="nav-link">Designs</a>
+                
+            </div>
+            <div class="cta">
+                <a href="#" class="cta-button">Contact</a>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <span id="menu-icon" class="icon">☰</span>
+              
+            </button>
+            <div id="mobile-menu" class="mobile-menu">
+                <span id="close-icon" class="cancel-icon" onclick="closeMenu()">✖</span>
+                <a href="/" class="mobile-link" onclick="closeMenu()">Home</a>
+                <a href="/" class="mobile-link" onclick="closeMenu()">About Us</a>
+                <a href="/" class="mobile-link" onclick="closeMenu()">Gallery</a>
+                <div class="drop">
+                    <a href="#" class="mobile-link" onclick="closeMenu()">Product</a>
+                    <ul class="dropdown">
+                        <li><a href="/product/funiture.html">Funiture</a></li>
+                        <li><a href="/product/kitchen.html">Kitchen</a></li>
+                        <li><a href="/product/lighting.html">Lighting</a></li>
+                        <li><a href="/product/decor.html">Decor</a></li>
+                        <li><a href="/product/bath.html">Bathroom</a></li>
+                    </ul>
+                </div>
+                <a href="/" class="mobile-link" onclick="closeMenu()">Designs</a>
+              
+                <!-- <a href="/signupform" class="mobile-cta-button" onclick="closeMenu()">Contact</a> -->
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-container">
+        <!-- Main content of the page -->
+          <!---Hero section-->
+            <div class="hero-section">
+                <div class="text-content">
+                    <h1 class="hero-title">Lets make your Interior <span>Better</span></h1>
+                    <p class="hero-description">Transform your space with our expert interior design services, tailored to reflect your unique style and vision.</p>
+                    <button class="hero-button">Contact</button>
+                </div>
+                <div class="image-content">
+                    <img src="/images/home/heroimage.jpeg" alt="Hero Image" class="hero-image">
+                </div>
+            </div>
+
+            <!--About Section-->
+            <div class="abouthome-container">
+                <h1 class="abouthome-title">
+                    What We <span>Do</span>
+                </h1>
+              
+                <p class="abouthome-description">
+                    we offer inspiration and resources for all your interior design projects. From tips and DIY ideas to expert advice, we help you create spaces that reflect your style!
+                </p>
+                <div class="scroll-container">
+                    <div class="scroll-header">
+                        <p> See all</p>
+                        <div class="scroll-button-group">
+                            <button class="scrollarrow-button" onclick="handleArrowClick('left')">&#9664;</button>
+                            <button class="scrollarrow-button" onclick="handleArrowClick('right')">&#9654;</button>
+                        </div>
+                    </div>
+                    
+                    <div class="scrollcard-container" id="cardContainer"></div>
+                </div>
+                <div class="explore-more">
+                    <a href="#" class="explore-button">Explore More</a>
+                </div>
+            </div>
+            
+            <!---PRODUCT SECTION-->
+            <div class="abouthome-container">
+                <h1 class="abouthome-title">
+                    Our <span>Products</span>
+                </h1>
+            
+                <div class="producthome-container"></div>
+                <div class="explore-more">
+                    <a href="#" class="explore-button">Explore More</a>
+                </div>
+           </div>
+            <!---FAQ SECTION-->
+            <div class="abouthome-container">
+                <h1 class="abouthome-title">
+                    Frequently Asked <span>Questions</span>
+                </h1>
+            <div class="faq-container">
+                
+                <div class="faq-accordion" id="faq-accordion"></div>
+            </div>
+            </div>
+        
+
+            <!----TESTIMONY-->
+
+            <div class="testimonial-container">
+                <h1>Here's some of the feedback that our clients have been giving us</h1>
+                <div class="testimonial-slider">
+                    <button class="arrow-left">
+                        <!-- <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg> -->
+                        <
+                    </button>
+                    <div class="testimonial-items" id="testimonial-items"></div>
+                    <button class="arrow-right">
+                        <!-- <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg> -->
+                        >
+                    </button>
+                </div>
+            </div>
+  
+    </main>
+
+    <!-- Footer  -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-logosection">
+                    <h2>Home Styler</h2>
+                    <p class="footer-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+               </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#" class="footer-a">About</a></li>
+                        <li><href="#" class="footer-a">Product</a></li>
+                        <li><href="#" class="footer-a">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><href="#" class="footer-a">Facebook</a></li>
+                        <li><href="#" class="footer-a">Twitter</a></li>
+                        <li><href="#" class="footer-a">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><href="#" class="footer-a">consulto98@gmail.com</a></li>
+                        <li><href="#" class="footer-a">76/A, Green road, NY</a></li>
+                        <li><href="#" class="footer-a">(80) 783 367-3904</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Company Name. All rights reserved.
+            </div>
+        </div>
+        </footer>
+        
+
+
+    <script src="/index.js"></script>
+    
+</body>
+</html>
